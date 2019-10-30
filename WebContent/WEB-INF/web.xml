@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>qmm1</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>login.htm</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>qmm</servlet-name>
+    <servlet-class>servlet.qmm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qmm</servlet-name>
+    <url-pattern>/servlet/qmm</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>qmm1</servlet-name>
+    <servlet-class>servlet.qmm1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qmm1</servlet-name>
+    <url-pattern>/servlet/qmm1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>qmm2</servlet-name>
+    <servlet-class>servlet.qmm2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qmm2</servlet-name>
+    <url-pattern>/servlet/qmm2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Loginqmm</servlet-name>
+    <servlet-class>servlet.Loginqmm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginqmm</servlet-name>
+    <url-pattern>/servlet/Loginqmm</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+          href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="./css/bootstrap-table.css">
+    <link rel="stylesheet" type="text/css"
+          href="./css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="./css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css"
+          href="./css/mainPage.css">
+    <link rel="stylesheet" type="text/css"
+          href="./css/mainPage.css">
+</head>
+<body>
+       <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collapse5" data-toggle="collapse" data-parent="#accordion"
+                               class="parentMenuTitle collapseHead">系统维护</a>
+                            <div class="pull-right  "><span class="caret"></span></div>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse collapseBody">
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#"  class="menu_item"
+                                       >更改密码</a>
+                                </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="#" >系统日志</a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" >登陆日志</a>
+                                    </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                         
+                </div>
+
+
+      
+      <div class="dropdown panel panel-default">
+  <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+   用户管理
+    <span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dLabel">
+    ...
+  </ul>
+</div> 
+
+<form class="form-inline">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4">Input with success</label>
+    <input type="text" class="form-control" id="inputSuccess4" aria-describedby="inputSuccess4Status">
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputSuccess4Status" class="sr-only">(success)</span>
+  </div>
+</form>
+<form class="form-inline">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputGroupSuccess3">Input group with success</label>
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status">
+    </div>
+    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+    <span id="inputGroupSuccess3Status" class="sr-only">(success)</span>
+  </div>
+</form>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+</div>
+
+<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">点我弹出/隐藏弹出框</button>
+
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on 左侧
+</button>
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框</a>
+
+<table class="table table-hover">
+  ...
+</table>
+
+
+<script type="text/javascript"
+        src="./js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="./js/jquery-ui.min.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrapValidator.min.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrap-table.min.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript"
+        src="./js/jquery.md5.js"></script>
+<script type="text/javascript"
+        src="./js/mainPage.js"></script>
+<script type="text/javascript"
+        src="./js/ajaxfileupload.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript"
+        src="./js/bootstrap-datetimepicker.zh-CN.js"></script>
+
+
+        
+
+</body>
+</html>

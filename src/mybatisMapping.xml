@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.student">
+
+    <!-- namespace：名称空间
+         id：sql的唯一标识
+         resultType：返回值类型
+         #{id}：从传递过来的参数中取出id值
+     -->
+     
+
+    <select id="findall" resultType="com.db.student.student">
+        select * from student2
+    </select>
+    
+    <select id="findById" parameterType="String" resultType="com.db.student.student">
+        select * from student2 where id = #{id}
+    </select>
+    
+    <update id="updatePassword" parameterType="com.db.student.student">
+    	update student2 
+		set password=#{password}
+		where id=#{id}
+    </update>
+	<select id="findallcalss" resultType="com.db.student.class1">
+		select * from qmm
+	</select>
+	<select id="findallclassS" resultType="com.db.student.class1">
+		select * from qmm1
+	</select>
+	
+	
+	
+	<select id="findclassqmm2" resultType="com.db.student.qmm2">
+		select * from qmm2
+	</select>
+		
+	<select id="findclassG" resultType="com.db.student.qmm2">
+		select * from qmm3
+	</select>
+	
+	<select id="findcx0" resultType="com.db.student.classCX">
+		select * from qmm4 
+	</select>
+	
+	<select id="findcxId" parameterType="Integer" resultType="com.db.student.classCX">
+		select * from qmm4 where c_id=#{id}
+	</select>
+	
+	<select id="findcxName" parameterType="String" resultType="com.db.student.classCX">
+		select * from qmm4 where c_name=#{name}
+	</select>
+	
+	<select id="findcxStat" parameterType="String" resultType="com.db.student.classCX">
+		select * from qmm4 where c_stat=#{stat}
+	</select>
+	<select id="findclasswork" resultType="com.db.column.classwork">
+		select * from classwork
+	</select>
+	
+	
+</mapper>
